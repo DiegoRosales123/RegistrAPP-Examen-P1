@@ -4,15 +4,26 @@
       <img src="../../assets/REGISTRARSE.png"/>
     </div>
     <div>
+
+      
       <ion-item fill="outline">
         <ion-label position="floating">Correo Electrónico</ion-label>
         <ion-input [(ngModel)]="email" type="email"></ion-input>
       </ion-item>
       <div class="margin"></div>
       <ion-item fill="outline">
-        <ion-label position="floating">Nombre de Usuario</ion-label>
+        <ion-label position="floating">Nombre y Apellido</ion-label>
         <ion-input [(ngModel)]="username" type="text"></ion-input>
       </ion-item>
+      <!-- campos para Nombre, Apellido y Rut -->
+
+      <div class="margin"></div>
+      <ion-item fill="outline">
+        <ion-label position="floating">Rut</ion-label>
+        <ion-input [(ngModel)]="rut" type="text"></ion-input>
+      </ion-item>
+
+
       <div class="margin"></div>
       <ion-item fill="outline">
         <ion-label position="floating">Contraseña</ion-label>
@@ -23,6 +34,8 @@
         <ion-label position="floating">Confirmar Contraseña</ion-label>
         <ion-input [(ngModel)]="confirmPassword" type="password"></ion-input>
       </ion-item>
+      <div class="margin"></div>
+      
       <div class="margin"></div>
       <p class="error-message" *ngIf="showErrorMessage">Error, debe rellenar todos los campos</p>
       <ion-button class="btn-login" (click)="register()">REGISTRARSE</ion-button>

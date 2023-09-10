@@ -11,17 +11,22 @@ export class RegisterPage {
   username: string = '';
   password: string = '';
   confirmPassword: string = '';
-  showErrorMessage: boolean = false; // Agrega esta variable
+  rut: string = ''; // Agrega el campo de Rut
+  showErrorMessage: boolean = false;
 
   constructor(private router: Router) {}
 
   register() {
-    // Validar que todos los campos obligatorios estén llenos
-    if (this.email.trim() === '' || this.username.trim() === '' || this.password.trim() === '') {
-      this.showErrorMessage = true; // Mostrar el mensaje de error
-      return; // Evitar que el registro continúe si faltan campos
+    if (
+      this.email.trim() === '' ||
+      this.username.trim() === '' ||
+      this.password.trim() === '' ||
+      this.rut.trim() === '' // Verifica que el Rut no esté vacío
+    ) {
+      this.showErrorMessage = true;
+      return;
     } else {
-      this.showErrorMessage = false; // Ocultar el mensaje de error si todos los campos están llenos
+      this.showErrorMessage = false;
     }
 
     if (this.password === this.confirmPassword) {
@@ -29,6 +34,7 @@ export class RegisterPage {
         email: this.email,
         username: this.username,
         password: this.password,
+        rut: this.rut              // Agrega el Rut al objeto de usuario
       };
 
       console.log('Datos de usuario a almacenar:', user);
@@ -36,7 +42,6 @@ export class RegisterPage {
       // Guardar el usuario en el LocalStorage
       localStorage.setItem('userData', JSON.stringify(user));
 
-      // Redirigir al usuario a la página de inicio de sesión (login)
       this.router.navigate(['/login']);
     } else {
       console.log('Las contraseñas no coinciden');
