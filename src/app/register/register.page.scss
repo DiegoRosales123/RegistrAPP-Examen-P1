@@ -1,0 +1,45 @@
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    img{
+        width: 60%;
+        display: block;
+        align-self: center;
+        margin-bottom: 20px;
+    }
+
+}
+.img-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ion-button{
+    --background: #F82C2C;
+    color: #ffffff;
+    width: 100%;
+}
+ion-item{
+    --margin:15px 0;
+}
+.margin{
+    margin: 15px;
+}
+.forgot{
+    margin-top: 20px;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    span{
+        color: #F82C2C;
+        font-weight: 700;
+    }
+}
+.error-message {
+    color: red; /* Cambia el color a rojo */
+  }

@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Bienvenido {{ usernameFromLocalStorage }}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <!-- Agrega un mensaje con estilo responsivo -->
+    <p class="scan-instructions">
+      Por favor, presiona donde dice <strong><span class="red-text">ESCANEAR CODIGO QR</span></strong> para escanear tu código
+    </p>
+    
+    <ion-button (click)="barcodeScanner()">ESCANEAR CODIGO QR</ion-button>
+
+    <img src="assets/qrejemplo.png" alt="QR Ejemplo" class="responsive-image" />
+    
+    <p>{{ scannedOutput }}</p>
+  </div>
+</ion-content>

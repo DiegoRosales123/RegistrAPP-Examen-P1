@@ -1,0 +1,45 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+.scan-instructions {
+  font-size: 1.2rem; /* Tamaño de fuente responsivo */
+  text-align: center; /* Centra el texto en el centro de la pantalla */
+  margin: 20px 0; /* Espacio en la parte superior e inferior del mensaje */
+}
+
+.red-text {
+  color: red; /* Color de texto rojo */
+}
+
+.responsive-image {
+  max-width: 100%; /* Establece el ancho máximo para que la imagen sea responsive */
+  height: auto; /* Ajusta la altura automáticamente para mantener la relación de aspecto */
+  display: block; /* Evita que se apliquen márgenes no deseados */
+  margin-top: 10px; /* Agrega un margen superior para separar la imagen del botón */
+}
+
