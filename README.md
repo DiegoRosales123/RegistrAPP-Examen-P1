@@ -5,6 +5,7 @@
 
  * `npm install --legacy-peer-deps`
 
+## Luego de esto todo estara en orden.
 
 ## 🎨 Imagenes
 
@@ -26,4 +27,3 @@
 * npm install @ionic-native/core --legacy-peer-deps
 
 
-## Luego de esto todo estara en orden.
