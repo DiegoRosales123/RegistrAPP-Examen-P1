@@ -1,0 +1,11 @@
+.qr-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Esto hará que el contenedor ocupe toda la altura de la ventana */
+  }
+  
+  qrcode {
+    max-width: 100%;
+    height: auto;
+  }

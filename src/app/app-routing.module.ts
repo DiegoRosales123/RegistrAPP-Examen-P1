@@ -33,6 +33,10 @@ const routes: Routes = [
     path: 'olvide',
     loadChildren: () => import('./olvide/olvide.module').then( m => m.OlvidePageModule)
   },
+  {
+    path: 'app',
+    loadChildren: () => import('./app/app.module').then( m => m.AppPageModule)
+  },
 ];
 
 @NgModule({
