@@ -6,8 +6,16 @@
  * `npm install --legacy-peer-deps`
 
 
+## 🎨 Imagenes
 
+<p align="center">
 
+<h4 align="center"> 
+  <img alt="FOTOS" title="#Fotos" src="./src/assets/imagenes/login.png" height="550px">
+  <img alt="FOTOS" title="#Fotos" src="./src/assets/imagenes/register.png" height="550px">
+  <img alt="FOTOS" title="#Fotos" src="./src/assets/imagenes/OlvideExitoso.png" height="550px">
+  <img alt="FOTOS" title="#Fotos" src="./src/assets/imagenes/qrhome.png" height="550px">
+</h4>
 
 
 
